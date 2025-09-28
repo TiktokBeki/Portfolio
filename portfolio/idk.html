@@ -1,0 +1,72 @@
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="project1.jpg" alt="Project Screenshot">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal site built with HTML, CSS, JS.</p>
+      <div class="project-links">
+        <a href="https://liveproject.com" target="_blank">Live Demo</a>
+        <a href="https://github.com/username/project" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <!-- Repeat for other projects -->
+  </div>
+<style>
+  #projects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin: 15px 0 10px;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #35d5eb;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: #0aa6c0;
+}
+
+</style>
+</section>
